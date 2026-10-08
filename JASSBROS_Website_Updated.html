@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JASSBROS</title>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Orbitron:wght@500;700;900&display=swap');
+
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+body{
+  font-family:Orbitron,Arial,sans-serif;color:#fff;
+  background:
+    radial-gradient(circle at 18% 20%,rgba(220,20,60,.32),transparent 30%),
+    radial-gradient(circle at 80% 75%,rgba(0,90,255,.28),transparent 35%),
+    linear-gradient(135deg,#050509,#0a1020 55%,#020307);
+}
+nav{
+  position:fixed;top:0;left:0;width:100%;height:78px;padding:0 7%;
+  display:flex;justify-content:flex-end;align-items:center;z-index:10;
+  background:linear-gradient(180deg,rgba(3,4,10,.85),transparent);
+}
+nav a{
+  color:#fff;text-decoration:none;margin-left:30px;font-size:12px;
+  letter-spacing:2px;transition:.25s
+}
+nav a:hover,nav a.active{color:#ff3154;text-shadow:0 0 12px #ff3154}
+
+section{
+  min-height:100vh;display:flex;align-items:center;justify-content:center;
+  padding:100px 22px;position:relative;overflow:hidden
+}
+.hero{text-align:center}
+.content{max-width:900px}
+.tag{letter-spacing:7px;font-size:13px;color:#ff3154;font-weight:700;margin-bottom:25px}
+h1{
+  font-family:Anton,Impact,sans-serif;font-size:clamp(76px,15vw,170px);
+  line-height:.9;letter-spacing:5px;
+  background:linear-gradient(180deg,#fff 10%,#ddd 48%,#ff1746 100%);
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  filter:drop-shadow(0 0 22px rgba(255,30,70,.35))
+}
+.subtitle{
+  margin:30px 0 38px;font-size:clamp(24px,4vw,43px);font-weight:900;
+  letter-spacing:3px;text-shadow:0 0 18px rgba(40,110,255,.7)
+}
+.btn{
+  display:inline-block;padding:16px 30px;margin:7px;border:1px solid #ff3154;
+  color:#fff;text-decoration:none;font-size:12px;letter-spacing:2px;
+  background:rgba(255,30,60,.06);transition:.25s
+}
+.btn:hover{background:#ff3154;box-shadow:0 0 28px rgba(255,30,60,.65);transform:translateY(-3px)}
+.btn.blue{border-color:#2878ff}.btn.blue:hover{background:#2878ff;box-shadow:0 0 28px rgba(40,120,255,.65)}
+
+.card{
+  width:min(900px,92vw);padding:45px 35px;text-align:center;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(5,8,20,.62);backdrop-filter:blur(10px);
+  box-shadow:0 0 45px rgba(20,70,180,.16)
+}
+h2{
+  font-family:Anton,Impact,sans-serif;font-size:clamp(48px,8vw,85px);
+  letter-spacing:3px;margin-bottom:25px
+}
+.red{color:#ff3154}
+.card p{font-size:16px;line-height:2;letter-spacing:1px;color:#e5e5e5}
+.contact-list{margin-top:25px;display:grid;gap:14px;font-size:18px;letter-spacing:2px}
+.contact-list a{color:#fff;text-decoration:none}
+.contact-list a:hover{color:#ff3154}
+.small{margin-top:25px;color:#8993ad;font-size:11px;letter-spacing:3px}
+
+.corner{position:fixed;width:70px;height:70px;border-color:#ff3154;opacity:.7;z-index:5}
+.c1{top:28px;left:25px;border-top:2px solid;border-left:2px solid}
+.c2{bottom:25px;right:25px;border-bottom:2px solid;border-right:2px solid}
+.glow{position:absolute;width:300px;height:300px;border-radius:50%;filter:blur(80px);opacity:.18;pointer-events:none}
+.r{background:#ff1746;left:-100px;top:30%}.b{background:#1677ff;right:-100px;bottom:15%}
+</style>
+</head>
+
+<body>
+<div class="corner c1"></div><div class="corner c2"></div>
+<div class="glow r"></div><div class="glow b"></div>
+
+<nav>
+  <a href="#home" class="active">HOME</a>
+  <a href="#about">ABOUT</a>
+  <a href="#contact">CONTACT</a>
+</nav>
+
+<section class="hero" id="home">
+  <div class="content">
+    <div class="tag">EST. 2023 • SIX FRIENDS • ONE STORY</div>
+    <h1>JASSBROS</h1>
+    <div class="subtitle">WELCOME TO JASSBROS</div>
+    <a class="btn" href="#about">ENTER WEBSITE</a>
+    <a class="btn blue" href="https://www.instagram.com/jassbros_x/?utm_source=ig_web_button_share_sheet" target="_blank">INSTAGRAM</a>
+  </div>
+</section>
+
+<section id="about">
+  <div class="card">
+    <h2>ABOUT <span class="red">JASSBROS</span></h2>
+    <p>
+      A Six Friends Concern.<br>
+      It's About 3 Years Of Friendship,<br>
+      Aesthetic Adventures &amp; Cherishing Moments.
+    </p>
+    <p class="small">EST. 2023 — BUILT ON FRIENDSHIP &amp; MEMORIES</p>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="card">
+    <h2>CONTACT</h2>
+    <div class="contact-list">
+      <a href="tel:7907931780">7907931780</a>
+      <a href="tel:9995956509">99959 56509</a>
+      <a href="tel:7902577610">79025 77610</a>
+    </div>
+    <p class="small">JASSBROS • EST. 2023</p>
+  </div>
+</section>
+
+</body>
+</html>
